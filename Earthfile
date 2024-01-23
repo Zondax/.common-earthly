@@ -1,5 +1,5 @@
 #
-VERSION --wait-block 0.7
+VERSION 0.8
 FROM python:3.10-alpine3.18
 
 RUN apk add git
