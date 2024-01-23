@@ -7,7 +7,7 @@ RUN apk add git
 # This shared command can be used to publish images in a standardized format
 # this will publish images named as zondax/${CONTAINER_FULLNAME}-{FLEXTAGS}
 PUBLISH_WITH_FLEXTAGS:
-    COMMAND
+    FUNCTION
     ARG --required CONTAINER_FULLNAME
     ARG --required EARTHLY_GIT_SHORT_HASH
     ARG EARTHLY_GIT_COMMIT_TIMESTAMP
